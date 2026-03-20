@@ -1,14 +1,13 @@
 const users = [
-    {
-        "id": 1,
-        "name": "Mikaely",
-        "idade": 18
-    },
-    {
-        "id": 2,
-        "name": "Luiza",
-        "idade": 19
-    }
+{           "id"  : 1,
+            "name" : "Rodrigues",
+            "age" : 18
+},
+{
+            "id" : 2,
+            "name" : "Santos",
+            "age" : 19
+}
 ]
 
 module.exports = users
