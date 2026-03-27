@@ -29,8 +29,18 @@ const creatUSer = (req, res) => {
 
 }
 
+const getUserById = (req, res) => {
+    
+    const id = req.params.id
+    const user = userModel.findById(id)
+
+    if (!user) return res.status(404).json({message: "Usuário não emcontrado"})
+
+    return res.json(user)
+}
 
 module.exports = {
     getAllUsers,
-    creatUSer
+    creatUSer,
+    getUserById
 }

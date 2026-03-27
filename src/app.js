@@ -13,4 +13,6 @@ app.post("/users", userController.creatUSer)
 
 app.get("/users", userController.getAllUsers)
 
+app.get("/users/:id", userController.getUserById)
+
 module.exports = app
